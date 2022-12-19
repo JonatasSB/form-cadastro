@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta id="viewport" name="viewport" content="width=device-width", user-scalabre="0" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="icon" href="icon.png"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nanum+Gothic&family=Nerko+One&display=swap" rel="stylesheet" />
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Preencha os campos</h1>
+        </div>
+    </header>
+    <form action="index.html" method="post">
+        <div class="container">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                    <label for="name">Nome completo</label>
+                    <input type="text" name="nome" id="name" required autocomplete="off"/>
+                    <label for="name-mom">Nome da Mãe</label>
+                    <input type="text" name="nome-mae" id="name-mom" required autocomplete="off" />
+                    <label for="name-dad">Nome do Pai</label>
+                    <input type="text" name="nome-pai" id="name-dad" required autocomplete="off" />
+                    <label for="email">E-mail</label>
+                    <input type="email" name="e-mail" id="email" required autocomplete="off" />
+                    <label for="phone">Telefone</label>
+                    <input type="tel" name="telefone" id="phone" required autocomplete="off" />
+                    <label for="region">Qual seu estado</label>
+                    <select required>
+                        <option>Ceará</option>
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Minas Gerais</option>
+                        <option>Santa Catarina</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rio Grande do Norte</option>
+                    </select>
+                    <label>Se não encontrou o seu estado, por gentileza nos informe abaixo:</label>
+                    <textarea name="estado" rows="1" cols="20" placeholder="Seu estado"></textarea>
+                    <label>Gênero</label>
+                    <label><input type="radio" name="sexo" />Homem</label>
+                    <label><input type="radio" name="sexo" />Mulher</label>
+                    <label><input type="radio" name="sexo" />Não informar</label>
+                    <label for="years">Data de nascimento</label>
+                    <input type="date" name="idade" id="years" required />
+                    <div class="form2">
+                    <input type="submit" value="Enviar" class="enviar" style="width: 100px;"/>
+                    <input type="reset" value="Limpar" class="limpar" style="width: 100px;"/>
+                    </div>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
